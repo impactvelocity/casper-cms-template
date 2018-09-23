@@ -1,6 +1,6 @@
 ---
 label: Post Editing
-hide_body: true
+hide_body: false
 is_partial: false
 fields:
 - name: title
@@ -13,10 +13,3 @@ fields:
   type: datetime
   hidden: false
   default: ''
-- type: textarea
-  label: content
-  name: content
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
