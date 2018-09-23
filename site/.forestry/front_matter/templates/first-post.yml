@@ -1,15 +1,22 @@
 ---
-label: First Post
-hide_body: 
-is_partial: 
+label: Post Editing
+hide_body: true
+is_partial: false
 fields:
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- type: textarea
+  label: content
+  name: content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
